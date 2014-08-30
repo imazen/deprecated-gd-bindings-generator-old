@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGD.CLI", "LibGD.CLI\LibGD.CLI.csproj", "{2EA41BB1-FD5B-4C52-87E1-46B1DE50D6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGDSharp", "LibGDSharp\LibGDSharp.csproj", "{058BA1A4-9BBB-4857-8014-94DEBC65BCE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGD.Tests", "LibGD.Tests\LibGD.Tests.csproj", "{6FDDF983-054E-4018-B243-FD9CF2943845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA41BB1-FD5B-4C52-87E1-46B1DE50D6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA41BB1-FD5B-4C52-87E1-46B1DE50D6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA41BB1-FD5B-4C52-87E1-46B1DE50D6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA41BB1-FD5B-4C52-87E1-46B1DE50D6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058BA1A4-9BBB-4857-8014-94DEBC65BCE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058BA1A4-9BBB-4857-8014-94DEBC65BCE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058BA1A4-9BBB-4857-8014-94DEBC65BCE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDDF983-054E-4018-B243-FD9CF2943845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDDF983-054E-4018-B243-FD9CF2943845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDDF983-054E-4018-B243-FD9CF2943845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDDF983-054E-4018-B243-FD9CF2943845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FDDF983-054E-4018-B243-FD9CF2943845}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibGD.Tests</RootNamespace>
+    <AssemblyName>LibGD.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\References\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bmp\bmp_im2im.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bmp\bmp_null.cs" />
+    <Compile Include="freetype\bug00132.cs" />
+    <Compile Include="gd2\gd2_empty_file.cs" />
+    <Compile Include="gd2\gd2_im2im.cs" />
+    <Compile Include="gd2\gd2_null.cs" />
+    <Compile Include="gd2\gd2_read.cs" />
+    <Compile Include="gdimagearc\bug00079.cs" />
+    <Compile Include="gdimagecolorclosest\gdimagecolorclosest.cs" />
+    <Compile Include="gdimagecolordeallocate\gdimagecolordeallocate.cs" />
+    <Compile Include="gdimagecolorexact\gdimagecolorexact.cs" />
+    <Compile Include="gdimagecolorreplace\gdimagecolorreplace.cs" />
+    <Compile Include="gdimagecolorresolve\gdimagecolorresolve.cs" />
+    <Compile Include="gdimagecolortransparent\gdimagecolortransparent.cs" />
+    <Compile Include="gdimagecopyrotated\bug00020.cs" />
+    <Compile Include="gdimagecopy\bug00007.cs" />
+    <Compile Include="gdimagecopy\bug00081.cs" />
+    <Compile Include="gdimagefilledellipse\bug00010.cs" />
+    <Compile Include="gdimagefilledellipse\bug00191.cs" />
+    <Compile Include="gdimagefilledpolygon\gdimagefilledpolygon0.cs" />
+    <Compile Include="gdimagefilledrectangle\bug00004.cs" />
+    <Compile Include="gdimagefilledrectangle\bug00078.cs" />
+    <Compile Include="gdimagefilledrectangle\bug00106_gdimagefilledrectangle.cs" />
+    <Compile Include="gdimagefilltoborder\bug00037.cs" />
+    <Compile Include="gdimagefill\bug00002_1.cs" />
+    <Compile Include="gdimagefill\bug00002_2.cs" />
+    <Compile Include="gdimagefill\bug00002_3.cs" />
+    <Compile Include="gdimagefill\bug00002_4.cs" />
+    <Compile Include="gdimagefilter\gdCopyBlurred.cs" />
+    <Compile Include="gdimageline\bug00072.cs" />
+    <Compile Include="gdimageline\bug00077.cs" />
+    <Compile Include="gdimageline\bug00111.cs" />
+    <Compile Include="gdimageline\gdImageAALine_thickness.cs" />
+    <Compile Include="gdimageline\gdimageline_aa_outofrange.cs" />
+    <Compile Include="gdimageline\gdimageline_bug5.cs" />
+    <Compile Include="gdimageopenpolygon\gdimageopenpolygon0.cs" />
+    <Compile Include="gdimagepixelate\gdimagepixelate.cs" />
+    <Compile Include="gdimagepolygon\gdimagepolygon0.cs" />
+    <Compile Include="gdimagerectangle\bug00003.cs" />
+    <Compile Include="gdimagerectangle\bug00106_gdimagerectangle.cs" />
+    <Compile Include="gdimagerotate\bug00067.cs" />
+    <Compile Include="gdimagerotate\php_bug_64898.cs" />
+    <Compile Include="gdimagesetpixel\bug00186.cs" />
+    <Compile Include="gdtest\gdtest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="gd\gd_im2im.cs" />
+    <Compile Include="gd\gd_null.cs" />
+    <Compile Include="gd\gd_num_colors.cs" />
+    <Compile Include="gif\bug00005.cs" />
+    <Compile Include="gif\bug00005_2.cs" />
+    <Compile Include="gif\bug00060.cs" />
+    <Compile Include="gif\bug00066.cs" />
+    <Compile Include="gif\bug00181.cs" />
+    <Compile Include="gif\gif_null.cs" />
+    <Compile Include="jpeg\jpeg_empty_file.cs" />
+    <Compile Include="jpeg\jpeg_null.cs" />
+    <Compile Include="jpeg\jpeg_read.cs" />
+    <Compile Include="jpeg\jpeg_resolution.cs" />
+    <Compile Include="png\bug00011.cs" />
+    <Compile Include="png\bug00033.cs" />
+    <Compile Include="png\bug00086.cs" />
+    <Compile Include="png\bug00088.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="freetype\DejaVuSans.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gd2\conv_gd2_exp.gd2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gd2\conv_test.gd2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gd2\empty.gd2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gd\crafted_num_colors.gd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="png\emptyfile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="freetype\bug00132_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagearc\bug00079_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gd2\conv_test_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagecopy\bug00081_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagecopyrotated\bug00020_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="gdimagefile\" />
+    <Folder Include="gdimagescatterex\" />
+    <Folder Include="gdimagestringftex\" />
+    <Folder Include="gdimagestringft\" />
+    <Folder Include="gdinterpolatedscale\" />
+    <Folder Include="gdnewfilectx\" />
+    <Folder Include="gdtiled\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagefill\bug00002_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefill\bug00002_2_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefill\bug00002_3_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefill\bug00002_4_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagefilledellipse\bug00010_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefilledellipse\bug00191.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagefilledpolygon\bug00100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefilledpolygon\gdimagefilledpolygon0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefilledpolygon\gdimagefilledpolygon1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefilledpolygon\gdimagefilledpolygon2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagefilledpolygon\gdimagefilledpolygon3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimageline\bug00072_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\bug00077_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\bug00111_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdImageAALine_thickness_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_a_0_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_a_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_b_0_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_b_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_c_0_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_c_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_d_0_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageline\gdimageline_aa_d_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimageopenpolygon\gdimageopenpolygon0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageopenpolygon\gdimageopenpolygon1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageopenpolygon\gdimageopenpolygon2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimageopenpolygon\gdimageopenpolygon3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagepolygon\gdimagepolygon0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagepolygon\gdimagepolygon1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagepolygon\gdimagepolygon2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagepolygon\gdimagepolygon3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagerotate\bug00067_000_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_015_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_030_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_045_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_060_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_075_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_090_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_105_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_120_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_135_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_150_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_165_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\bug00067_180_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\php_bug_64898.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gdimagerotate\php_bug_64898_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gdimagerotate\remirh128.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gif\bug00005_0.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00005_1.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00005_2.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00005_2_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00005_3.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00060.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00066.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="gif\bug00066_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jpeg\conv_test.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="jpeg\conv_test_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="jpeg\empty.jpeg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="png\bug00033.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="png\bug00088_1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="png\bug00088_1_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="png\bug00088_2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="png\bug00088_2_exp.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
